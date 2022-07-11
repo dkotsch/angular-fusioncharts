@@ -7,6 +7,7 @@
     "start": "ng serve",
     "start-prod": "ng serve --prod",
     "build": "rm -rf dist/ && node_modules/.bin/ngc -p tsconfig-aot.json && rollup -c rollup.config.js && cp package-dist.json dist/package.json && cp README.md dist/ && npm run uglify",
+    "build-local": "rm -rf dist/ && node_modules/.bin/ngc -p tsconfig-aot.json && node node_modules/rollup/dist/bin/rollup -c rollup.config.js && cp package-dist.json dist/package.json && cp README.md dist/",
     "docs": "ng build --prod && npm run build",
     "test": "ng test",
     "lint": "ng lint",
