@@ -34,6 +34,7 @@
 		"./src/angular-fusioncharts/index.ts"
 	],
 	"angularCompilerOptions": {
+		"compilationMode": "partial",
 		"strictMetadataEmit": true,
 		"genDir": ".tmp"
 	}
