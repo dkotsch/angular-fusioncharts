@@ -236,7 +236,7 @@ class FusionChartsComponent
 
   containerId: string;
   private configObj: any;
-  private oldDataSource: any = this.dataSource;
+  private oldDataSource: any;
   private oldDataTable: any;
   private constructerParams = {
     type: true,
@@ -309,6 +309,7 @@ class FusionChartsComponent
     this.element = element;
     this.fusionchartsService = fusionchartsService;
     this.containerId = fusionchartsService.getNextItemCount();
+    this.oldDataSource = this.dataSource;
   }
 
   // @ViewChild('samplediv') chartContainer: ElementRef;
