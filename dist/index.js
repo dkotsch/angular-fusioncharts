@@ -3,6 +3,7 @@ import { FusionChartsComponent } from './src/fusioncharts.component';
 import { FusionChartsDirective } from './src/fusioncharts.directive';
 import { FusionChartsPipe } from './src/fusioncharts.pipe';
 import { FusionChartsStatic, FusionChartsService } from './src/fusioncharts.service';
+import * as i0 from "@angular/core";
 export { FusionChartsComponent, FusionChartsDirective, FusionChartsPipe, FusionChartsStatic };
 var FusionChartsModule = /** @class */ (function () {
     function FusionChartsModule() {
@@ -34,8 +35,22 @@ var FusionChartsModule = /** @class */ (function () {
             modules: fcModules
         });
     };
-    FusionChartsModule.decorators = [
-        { type: NgModule, args: [{
+    FusionChartsModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: FusionChartsModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+    FusionChartsModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: FusionChartsModule, declarations: [FusionChartsComponent,
+            FusionChartsDirective,
+            FusionChartsPipe], exports: [FusionChartsComponent,
+            FusionChartsDirective,
+            FusionChartsPipe] });
+    FusionChartsModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: FusionChartsModule, providers: [
+            FusionChartsService,
+            FusionChartsStatic
+        ] });
+    return FusionChartsModule;
+}());
+export { FusionChartsModule };
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.11", ngImport: i0, type: FusionChartsModule, decorators: [{
+            type: NgModule,
+            args: [{
                     declarations: [
                         FusionChartsComponent,
                         FusionChartsDirective,
@@ -50,11 +65,6 @@ var FusionChartsModule = /** @class */ (function () {
                         FusionChartsService,
                         FusionChartsStatic
                     ]
-                },] },
-    ];
-    /** @nocollapse */
-    FusionChartsModule.ctorParameters = function () { return []; };
-    return FusionChartsModule;
-}());
-export { FusionChartsModule };
+                }]
+        }] });
 //# sourceMappingURL=index.js.map
