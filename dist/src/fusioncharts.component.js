@@ -148,6 +148,8 @@ var FusionChartsComponent = /** @class */ (function () {
         this.drillDownCancelled = new EventEmitter();
         this.drillUpCancelled = new EventEmitter();
         this.initialized = new EventEmitter();
+        // @ts-ignore
+        this.oldDataSource = this.dataSource;
         this.constructerParams = {
             type: true,
             id: true,
@@ -210,7 +212,6 @@ var FusionChartsComponent = /** @class */ (function () {
         this.element = element;
         this.fusionchartsService = fusionchartsService;
         this.containerId = fusionchartsService.getNextItemCount();
-        this.oldDataSource = this.dataSource;
     }
     // @ViewChild('samplediv') chartContainer: ElementRef;
     FusionChartsComponent.prototype.checkIfDataTableExists = function (dataSource) {

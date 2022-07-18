@@ -377,6 +377,8 @@
             this.drillDownCancelled = new i0.EventEmitter();
             this.drillUpCancelled = new i0.EventEmitter();
             this.initialized = new i0.EventEmitter();
+            // @ts-ignore
+            this.oldDataSource = this.dataSource;
             this.constructerParams = {
                 type: true,
                 id: true,
@@ -439,7 +441,6 @@
             this.element = element;
             this.fusionchartsService = fusionchartsService;
             this.containerId = fusionchartsService.getNextItemCount();
-            this.oldDataSource = this.dataSource;
         }
         // @ViewChild('samplediv') chartContainer: ElementRef;
         FusionChartsComponent.prototype.checkIfDataTableExists = function (dataSource) {
